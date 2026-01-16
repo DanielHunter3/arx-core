@@ -1,0 +1,29 @@
+[package]
+name = "arx-core"
+version = "0.1.0"
+edition = "2024"
+license = "GPL-3.0"
+
+[dependencies]
+
+# Асинхронность и сети
+tokio = { version = "1.35", features = ["full"] }
+reqwest = { version = "0.11", features = ["stream"] } # для загрузки
+flate2 = "1.0"     # распаковка .tar.zst
+
+# Конфигурация
+serde = { version = "1.0", features = ["derive"] }
+toml = "0.8"       # или ron/cbor для перфоманса
+
+# База данных (ключевой выбор!)
+sqlx = { version = "0.7", features = ["postgres", "runtime-tokio", "macros", "chrono"] }
+
+# Зависимости (если нужен SAT-решатель)
+pubgrub = "0.3"    # алгоритм разрешения зависимостей
+# или реализовать свой на основе Topological sort + constraints
+
+# Сигнатуры и безопасность
+ring = "0.17"      # криптография
+async-signature = "0.3" # подписи
+
+thiserror = "2.0.17"
