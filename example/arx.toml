@@ -1,0 +1,7 @@
+[package]
+name = "firefox"
+version = "115.3.0"
+
+[dependencies]
+libvpx = { version = ">=11", policy = "rolling-patch" }
+libxcb = { version = "1.13", policy = "lts" }
