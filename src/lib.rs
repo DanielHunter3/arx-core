@@ -1,8 +1,8 @@
-mod constant;
-mod errhandle;
+pub mod constant;
+pub mod errhandle;
 
-mod component;
-mod composition;
+pub mod component;
+pub mod composition;
 
 #[cfg(test)]
 mod tests {
