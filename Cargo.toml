@@ -2,6 +2,7 @@
 name = "arx-core"
 version = "0.1.0"
 edition = "2024"
+description = "The Core of Packet Manager ARX"
 
 repository = "https://github.com/DanielHunter3/arx-core"
 readme = "README.md"
