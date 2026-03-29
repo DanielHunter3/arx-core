@@ -1,8 +1,11 @@
 pub mod constant;
 pub mod errhandle;
+pub mod config;
 
 pub mod component;
 pub mod composition;
+
+pub use component::version::*;
 
 #[cfg(test)]
 mod tests {

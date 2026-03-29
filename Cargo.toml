@@ -1,6 +1,6 @@
 [package]
 name = "arx-core"
-version = "0.1.2"
+version = "0.1.4"
 edition = "2024"
 description = "The Core of Packet Manager ARX"
 
@@ -20,9 +20,7 @@ zstd = "0.13"
 
 # Конфигурация
 semver = { version = "1.0", features = ["serde"] }
-
-# База данных
-sqlx = { version = "0.7", features = ["postgres", "runtime-tokio", "macros", "chrono"] }
+serde = { version = "1.0", features = ["derive"] }
 
 # Зависимости
 pubgrub = "0.3"    # алгоритм разрешения зависимостей
