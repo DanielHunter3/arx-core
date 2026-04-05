@@ -1,19 +1,16 @@
-pub mod constant;
 pub mod errhandle;
 pub mod config;
+
+pub use errhandle::*;
+pub use config::*;
 
 pub mod component;
 pub mod composition;
 
-pub use component::version::*;
+pub use component::*;
+pub use composition::*;
 
 #[cfg(test)]
 mod tests {
-    use super::*;
 
-    #[test]
-    fn it_works() {
-        let result = constant::ARX_PATH;
-        assert_eq!(result, "/home/user/arx");
-    }
 }
