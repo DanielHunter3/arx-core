@@ -1,14 +1,13 @@
 pub mod errhandle;
-pub mod config;
-
 pub use errhandle::*;
-pub use config::*;
 
 pub mod component;
 pub mod composition;
+pub mod hash;
 
 pub use component::*;
 pub use composition::*;
+pub use hash::*;
 
 #[cfg(test)]
 mod tests {
